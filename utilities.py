@@ -2,6 +2,8 @@ import torch
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 import torch.nn as nn
+import time
+import numpy as np
 
 class FashionMNISTLoader:
     def __init__(self, batch_size=64,resize=(32,32),download=True, data_dir='./data'):
