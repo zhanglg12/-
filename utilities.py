@@ -4,6 +4,7 @@ from torch.utils.data import DataLoader
 import torch.nn as nn
 import time
 import numpy as np
+from torch.utils.tensorboard import SummaryWriter
 
 class FashionMNISTLoader:
     def __init__(self, batch_size=64,resize=(32,32),download=True, data_dir='./data'):
@@ -171,6 +172,7 @@ class Trainer():
         if cuda:
             self.model = self.model.cuda()
         self.k = 0
+        self.writer = SummaryWriter()
     
     def clip_gradients(self, grad_clip_val, model):
         """Defined in :numref:`sec_rnn-scratch`"""
@@ -194,25 +196,29 @@ class Trainer():
                 l.backward()
                 self.clip_gradients(10, self.model)
                 self.optimizer.step()
-                self.k += self.data.batch_size
+                self.k += 1
                 if self.k % 100 == 0:
-                    print(f"Loss: {l.item()}")
-                    _, predicted = torch.max(outputs, 1)
-                    print(f"predicted: {predicted[:5]}")
-                    
+                    self.writer.add_scalar('ViT',l, self.k)
             correct = 0
-            total = 0
+            total = 0 
+            loss =[]
             with torch.no_grad():
                 for X, y in self.data.test_loader:
                     if self.cuda:
                         X = X.cuda()
                         y = y.cuda()
                     outputs = self.model(X)
+                    outputs = outputs.view(-1, self.feature_dim)
+                    y = y.view(-1)
+                    l = self.loss(outputs, y)
                     _, predicted = torch.max(outputs, 1)
                     total += y.size(0)
                     correct += (predicted == y).sum().item()
+                    loss.append(l.item())
             accuracy = correct / total
-            print(f"Test Accuracy: {accuracy * 100:.2f}%")
+            loss = np.mean(loss)
+            self.writer.add_scalars('ViT', {'test_loss':loss, 'test_accuracy':accuracy}, self.k)
+
     
     
 
