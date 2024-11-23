@@ -159,8 +159,11 @@ class ViT(nn.Module):
 
 
 class Trainer():
-    def __init__(self, trainer_fn, hyperparams, data, model,
+    def __init__(self, trainer_fn, optimizer_name, hyperparams, data, model,
                feature_dim, num_epochs=2, cuda=True):
+        self.model = model
+        if cuda:
+            self.model = self.model.cuda()
         self.optimizer = trainer_fn(model.parameters(), **hyperparams)
         self.hyperparams = hyperparams
         self.data = data
@@ -168,11 +171,9 @@ class Trainer():
         self.num_epochs = num_epochs
         self.loss = nn.CrossEntropyLoss()
         self.cuda = cuda
-        self.model = model
-        if cuda:
-            self.model = self.model.cuda()
         self.k = 0
         self.writer = SummaryWriter()
+        self.optimizer_name = optimizer_name
     
     def clip_gradients(self, grad_clip_val, model):
         """Defined in :numref:`sec_rnn-scratch`"""
@@ -198,7 +199,7 @@ class Trainer():
                 self.optimizer.step()
                 self.k += 1
                 if self.k % 100 == 0:
-                    self.writer.add_scalar('ViT',l, self.k)
+                    self.writer.add_scalars(self.optimizer_name,{'train_loss':l}, self.k)
             correct = 0
             total = 0 
             loss =[]
@@ -217,7 +218,7 @@ class Trainer():
                     loss.append(l.item())
             accuracy = correct / total
             loss = np.mean(loss)
-            self.writer.add_scalars('ViT', {'test_loss':loss, 'test_accuracy':accuracy}, self.k)
+            self.writer.add_scalars(self.optimizer_name, {'test_loss':loss, 'test_accuracy':accuracy}, self.k)
 
     
     
