@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/7cb3e27651f8478390cd94b3d989dd30/artifacts
+end_time: 1732671960944
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7cb3e27651f8478390cd94b3d989dd30
+run_name: bald-loon-935
+run_uuid: 7cb3e27651f8478390cd94b3d989dd30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732671960907
+status: 3
+tags: []
+user_id: zlg

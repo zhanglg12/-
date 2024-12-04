@@ -172,9 +172,8 @@ class Trainer():
         self.loss = nn.CrossEntropyLoss()
         self.cuda = cuda
         self.k = 0
-        self.writer = SummaryWriter()
         self.optimizer_name = optimizer_name
-    
+   
     def clip_gradients(self, grad_clip_val, model):
         """Defined in :numref:`sec_rnn-scratch`"""
         params = [p for p in model.parameters() if p.requires_grad]
@@ -185,6 +184,8 @@ class Trainer():
 
     def fit(self):
         for epoch in range(self.num_epochs):
+            train_loss = 0
+            k = 0
             for X, y in self.data.train_loader:
                 if self.cuda:
                     X = X.cuda()
@@ -197,9 +198,9 @@ class Trainer():
                 l.backward()
                 self.clip_gradients(10, self.model)
                 self.optimizer.step()
+                train_loss += l.item()
                 self.k += 1
-                if self.k % 100 == 0:
-                    self.writer.add_scalars(self.optimizer_name,{'train_loss':l}, self.k)
+                self.writer.add_scalars(self.optimizer_name,{'train_loss':train_loss}, self.k)
             correct = 0
             total = 0 
             loss =[]

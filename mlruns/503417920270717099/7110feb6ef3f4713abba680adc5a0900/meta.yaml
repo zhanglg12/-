@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/503417920270717099/7110feb6ef3f4713abba680adc5a0900/artifacts
+end_time: 1732675132430
+entry_point_name: ''
+experiment_id: '503417920270717099'
+lifecycle_stage: active
+run_id: 7110feb6ef3f4713abba680adc5a0900
+run_name: nosy-dove-942
+run_uuid: 7110feb6ef3f4713abba680adc5a0900
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732675132391
+status: 3
+tags: []
+user_id: zlg

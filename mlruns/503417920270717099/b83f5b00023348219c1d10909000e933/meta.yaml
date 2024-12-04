@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/503417920270717099/b83f5b00023348219c1d10909000e933/artifacts
+end_time: 1732675111712
+entry_point_name: ''
+experiment_id: '503417920270717099'
+lifecycle_stage: active
+run_id: b83f5b00023348219c1d10909000e933
+run_name: enchanting-snail-258
+run_uuid: b83f5b00023348219c1d10909000e933
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732675111672
+status: 3
+tags: []
+user_id: zlg

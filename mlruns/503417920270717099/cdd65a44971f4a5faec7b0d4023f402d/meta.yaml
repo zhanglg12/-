@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/503417920270717099/cdd65a44971f4a5faec7b0d4023f402d/artifacts
+end_time: 1732675099894
+entry_point_name: ''
+experiment_id: '503417920270717099'
+lifecycle_stage: active
+run_id: cdd65a44971f4a5faec7b0d4023f402d
+run_name: peaceful-seal-458
+run_uuid: cdd65a44971f4a5faec7b0d4023f402d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732675099842
+status: 3
+tags: []
+user_id: zlg

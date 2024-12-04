@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/622137947173305277/f9e7acb7bbb84560883b0924e5785b2e/artifacts
+deleted_time: 1732675335481
+end_time: null
+entry_point_name: ''
+experiment_id: '622137947173305277'
+lifecycle_stage: deleted
+run_id: f9e7acb7bbb84560883b0924e5785b2e
+run_name: auspicious-kit-252
+run_uuid: f9e7acb7bbb84560883b0924e5785b2e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732675197684
+status: 1
+tags: []
+user_id: unknown

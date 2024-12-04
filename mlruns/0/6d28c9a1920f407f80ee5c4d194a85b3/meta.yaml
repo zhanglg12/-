@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/6d28c9a1920f407f80ee5c4d194a85b3/artifacts
+end_time: 1732671952488
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6d28c9a1920f407f80ee5c4d194a85b3
+run_name: selective-chimp-924
+run_uuid: 6d28c9a1920f407f80ee5c4d194a85b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732671952403
+status: 3
+tags: []
+user_id: zlg

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/503417920270717099/9047d5418c67403da1a6fb250bb752fe/artifacts
+end_time: 1732675117592
+entry_point_name: ''
+experiment_id: '503417920270717099'
+lifecycle_stage: active
+run_id: 9047d5418c67403da1a6fb250bb752fe
+run_name: skittish-sponge-214
+run_uuid: 9047d5418c67403da1a6fb250bb752fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732675117553
+status: 3
+tags: []
+user_id: zlg

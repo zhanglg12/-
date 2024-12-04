@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c4f5e4c006d24c08a5dd25742f437691/artifacts
+end_time: 1732672408144
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c4f5e4c006d24c08a5dd25742f437691
+run_name: thoughtful-gnu-895
+run_uuid: c4f5e4c006d24c08a5dd25742f437691
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732672355430
+status: 3
+tags: []
+user_id: zlg

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ee136f98f6694875a07147888148bb3f/artifacts
+end_time: 1732703470921
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ee136f98f6694875a07147888148bb3f
+run_name: melodic-horse-990
+run_uuid: ee136f98f6694875a07147888148bb3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732703470694
+status: 4
+tags: []
+user_id: zlg

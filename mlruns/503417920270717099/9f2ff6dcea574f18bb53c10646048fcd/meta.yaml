@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/503417920270717099/9f2ff6dcea574f18bb53c10646048fcd/artifacts
+end_time: 1732675169920
+entry_point_name: ''
+experiment_id: '503417920270717099'
+lifecycle_stage: active
+run_id: 9f2ff6dcea574f18bb53c10646048fcd
+run_name: zealous-slug-721
+run_uuid: 9f2ff6dcea574f18bb53c10646048fcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732675169878
+status: 3
+tags: []
+user_id: zlg

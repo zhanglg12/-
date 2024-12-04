@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/87ab59ed562141e78cda72c8fa74e2af/artifacts
+end_time: 1732671986116
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 87ab59ed562141e78cda72c8fa74e2af
+run_name: popular-crab-175
+run_uuid: 87ab59ed562141e78cda72c8fa74e2af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732671986064
+status: 3
+tags: []
+user_id: zlg

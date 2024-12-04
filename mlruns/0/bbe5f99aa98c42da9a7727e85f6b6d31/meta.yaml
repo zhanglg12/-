@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/bbe5f99aa98c42da9a7727e85f6b6d31/artifacts
+end_time: 1732671937343
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bbe5f99aa98c42da9a7727e85f6b6d31
+run_name: exultant-shrike-611
+run_uuid: bbe5f99aa98c42da9a7727e85f6b6d31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732671937274
+status: 3
+tags: []
+user_id: zlg
